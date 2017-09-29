@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = function HttpError(message, extra) {
+module.exports = function ErrorObject(message, extra) {
   Error.captureStackTrace(this, this.constructor);
   this.name = this.constructor.name;
   this.message = message;
